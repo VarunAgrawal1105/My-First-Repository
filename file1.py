@@ -1,4 +1,4 @@
-//  STONE PAPER SCISSOR
+// STONE PAPER SCISSOR
 
 from random import randint
 
@@ -35,18 +35,18 @@ while (uc < 5 and cc < 5):
     game_choice()
     c = randint(1,3)
     print(c)
-    ch = input("I choose ")
-    if c == 1 and ch == "Paper":
+    ch = int(input("I choose "))
+    if c == 1 and ch == 2:
         user_win()
-    elif c == 1 and ch == "Scissor":
+    elif c == 1 and ch == 3:
         Computer_win()
-    elif c == 2 and ch == "Stone":
+    elif c == 2 and ch == 1:
         Computer_win()
-    elif c == 2 and ch == "Scissor":
+    elif c == 2 and ch == 3:
         user_win()
-    elif c == 3 and ch == "Stone":
+    elif c == 3 and ch == 1:
         user_win()
-    elif c == 3 and ch == "Paper":
+    elif c == 3 and ch == 2:
         Computer_win()
     else:
         print("Enter a valid Choice.Please try again!!!")
